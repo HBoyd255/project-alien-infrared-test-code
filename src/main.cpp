@@ -26,11 +26,30 @@
 
 #include <Arduino.h>
 
+#include "infrared.h"
 #include "systemInfo.h"
 
-void setup() { Serial.begin(SERIAL_BAUD_RATE); }
+Infrared infraredIndex0 = Infrared(0);
+Infrared infraredIndex1 = Infrared(1);
+Infrared infraredIndex2 = Infrared(2);
+Infrared infraredIndex3 = Infrared(3);
+
+void setup() {
+    Serial.begin(SERIAL_BAUD_RATE);
+
+    infraredIndex0.setup();
+    infraredIndex1.setup();
+    infraredIndex2.setup();
+    infraredIndex3.setup();
+}
 
 void loop() {
-    Serial.println("Hello, World!");
-    delay(1000);
+    Serial.print(" infraredIndex0:");
+    Serial.print(infraredIndex0.read());
+    Serial.print(" infraredIndex1:");
+    Serial.print(infraredIndex1.read());
+    Serial.print(" infraredIndex2:");
+    Serial.print(infraredIndex2.read());
+    Serial.print(" infraredIndex3:");
+    Serial.println(infraredIndex3.read());
 }
