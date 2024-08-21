@@ -44,12 +44,12 @@ void setup() {
 }
 
 void loop() {
-    Serial.print(" infraredIndex0:");
+    Serial.print("Index 0:");
     Serial.print(infraredIndex0.read());
-    Serial.print(" infraredIndex1:");
+    Serial.print(" Index 1:");
     Serial.print(infraredIndex1.read());
-    Serial.print(" infraredIndex2:");
+    Serial.print(" Index 2:");
     Serial.print(infraredIndex2.read());
-    Serial.print(" infraredIndex3:");
+    Serial.print(" Index 3:");
     Serial.println(infraredIndex3.read());
 }

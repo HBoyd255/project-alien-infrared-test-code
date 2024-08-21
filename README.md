@@ -23,3 +23,10 @@ SDA, SCL, it uses SCL, SDA, Ground, Power.
 
 This meant that I had to repin the Qwiic cables as shown below:
 ![Repinned Qwiic Cable](/photos/RepinnedQwiicCable.jpg)
+
+## Breadboard Layout
+
+This is the way that I set the hardware up on a breadboard.
+
+![Breadboard Layout](/photos/Breadboard.jpg)
+
